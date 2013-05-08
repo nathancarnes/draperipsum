@@ -11,6 +11,6 @@ class DraperIpsum
   end
 
   def words(number = 200)
-    @markov.generate_n_words 200
+    @markov.generate_n_words number
   end
 end
