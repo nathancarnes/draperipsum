@@ -3,5 +3,7 @@ require './draperipsum'
 
 get '/' do
   ipsum = DraperIpsum.new
-  ipsum.sentences
+  @ipsum = ipsum.sentences 8
+
+  erb :index
 end
