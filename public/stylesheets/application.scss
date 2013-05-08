@@ -58,6 +58,10 @@ a.button{
   &:hover{
     background: #000;
   }
+
+  &.zeroclipboard-is-hover{
+    background: #000;
+  }
 }
 
 footer{
