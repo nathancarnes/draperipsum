@@ -1,3 +1,8 @@
+html{
+  background: #f2f2f2;
+  min-height: 100%;
+}
+
 body{
   margin: 2em auto;
   max-width: 640px;
@@ -5,7 +10,6 @@ body{
   font-style: normal;
   font-weight: 400;
   color: #000;
-  background: #f2f2f2;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -20,6 +24,7 @@ h1{
   margin: 0;
   font-size: 6em;
   font-weight: normal;
+  text-align: center;
 
   span{
     color: #000;
@@ -48,12 +53,12 @@ a{
 a.button{
   display: inline-block;
   text-align: center;
-  margin: 2em auto 0;
   padding: .5em 2em .3em;
   background: #e11c17;
   color: #fff;
   text-transform: uppercase;
   font-size: 1.4em;
+  text-shadow: 2px 2px 0 rgba(0,0,0,.3);
 
   &:hover{
     background: #000;
@@ -67,9 +72,18 @@ a.button{
 footer{
   margin-top: 4em;
   padding-top: 3em;
-  border-top: 10px solid #ddd;
+  border-top: medium double #ddd;
   font-size: 1.2em;
   color: #aaa;
   text-decoration: uppercase;
   text-align: center;
+}
+
+section.buttons{
+  padding-top: 2em;
+  text-align: center;
+
+  .button{
+    margin: 0 .25em;
+  }
 }
